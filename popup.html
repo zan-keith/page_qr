@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Styling</title>
+    <script type="text/javascript" src="./packages/qrcode.js"></script>
+</head>
+<body class="popup">
+    <h3 id="title">QR GEN</h3>
+    <a id="url" target="_blank" class="code"></a>
+<div id="canvas">
+</div>
+<p>click for variations</p>
+<script src="./popup.js"></script>
+</body>
+<style>
+    body{
+        background-color: white;
+        color: black;
+    }
+    a{
+        text-decoration: underline;
+        color: gray;
+    }
+    a:hover{
+                text-decoration: none;
+
+    }
+    *{
+        margin:auto
+    }
+    hr{
+        opacity: 0.2;
+    }
+    #title {
+        text-align: left;
+        width:fit-content
+    }
+    #canvas svg {
+        width: 100%;
+        height: 100%;
+        /* make svg black */
+        filter: invert(0);
+    }
+
+    .popup {
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+    }
+    .code {
+        margin-top: 10px;
+        opacity: 0.5;
+        font-family: 'Courier New', Courier, monospace;
+        word-break: break-all;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+</style>
+</html>
